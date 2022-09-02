@@ -23,7 +23,8 @@ suite.addTest(unittest.makeSuite(top_up_code))
 suite.addTest(unittest.makeSuite(top_up))
 
 #指定报告存放位置
-report = "./report/report-{}.html".format(time.strftime("%Y%m%d-%H%M%S"))
+#report = "./report/report-{}.html".format(time.strftime("%Y%m%d-%H%M%S"))
+report = "./report/report.html"
 
 #打开文件流
 with open(report, "wb") as e:
