@@ -1,0 +1,52 @@
+[
+  {
+    "desc": "test001_获取短信验证码成功",
+    "number": 1,
+    "phone": "13809213610",
+    "imgVerifyCode": "8888",
+    "type": "reg",
+    "status_code": 200,
+    "status": 200,
+    "description": "短信发送成功"
+  },
+  {
+    "desc": "test002_图片验证码错误，获取短信验证码失败",
+    "number": 1,
+    "phone": "13809213610",
+    "imgVerifyCode": "8889",
+    "type": "reg",
+    "status_code": 200,
+    "status": 100,
+    "description": "图片验证码错误"
+  },
+  {
+    "desc": "test003_手机号为空，获取短信验证码失败",
+    "number": 1,
+    "phone": "",
+    "imgVerifyCode": "8888",
+    "type": "reg",
+    "status_code": 200,
+    "status": 100,
+    "description": "手机号不能为空"
+  },
+  {
+    "desc": "test004_图片验证码为空，获取短信验证码失败",
+    "number": 1,
+    "phone": "13809213610",
+    "imgVerifyCode": "",
+    "type": "reg",
+    "status_code": 200,
+    "status": 100,
+    "description": "图片验证码错误"
+  },
+  {
+    "desc": "test005_未调用图片验证码接口，获取短信验证码失败",
+    "number": 0,
+    "phone": "13809213610",
+    "imgVerifyCode": "8888",
+    "type": "reg",
+    "status_code": 200,
+    "status": 100,
+    "description": "图片验证码错误"
+  }
+]

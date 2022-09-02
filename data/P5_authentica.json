@@ -1,0 +1,29 @@
+[
+  {
+    "desc": "test001_正常认证成功",
+    "keywords": "13809213611",
+    "realname": "王多鱼",
+    "card_id": "372522197901256648",
+    "status_code": 200,
+    "status": 200,
+    "description": "提交成功!"
+  },
+  {
+    "desc": "test002_姓名为空_认证失败",
+    "keywords": "13809223611",
+    "realname": "",
+    "card_id": "372501198006292418",
+    "status_code": 200,
+    "status": 100,
+    "description": "姓名不能为空"
+  },
+  {
+    "desc": "test003_身份证为空_认证失败",
+    "keywords": "13809273611",
+    "realname": "王小鱼",
+    "card_id": "",
+    "status_code": 200,
+    "status": 100,
+    "description": "身份证号不能为空"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "desc": "test002_正常登录成功",
+    "time": 0,
+    "keywords": "13809213611",
+    "password": "test1234",
+    "status_code": 200,
+    "status": 200,
+    "description": "登录成功"
+  },
+  {
+    "desc": "test003_用户不存在，登录失败",
+    "time": 0,
+    "keywords": "13809213600",
+    "password": "test1234",
+    "status_code": 200,
+    "status": 100,
+    "description": "用户不存在"
+  },
+  {
+    "desc": "test004_密码为空，登录失败",
+    "time": 0,
+    "keywords": "13809213611",
+    "password": "",
+    "status_code": 200,
+    "status": 100,
+    "description": "密码不能为空"
+  },
+  {
+    "desc": "test005_密码错误1次，登录失败",
+    "time": 0,
+    "keywords": "13809213611",
+    "password": "test123",
+    "status_code": 200,
+    "status": 100,
+    "description": "密码错误1次,达到3次将锁定账户"
+  },
+  {
+    "desc": "test006_密码错误2次，登录失败",
+    "time": 0,
+    "keywords": "13809213611",
+    "password": "test123",
+    "status_code": 200,
+    "status": 100,
+    "description": "密码错误2次,达到3次将锁定账户"
+  },
+  {
+    "desc": "test007_密码错误3次，登录失败",
+    "time": 0,
+    "keywords": "13809213611",
+    "password": "test123",
+    "status_code": 200,
+    "status": 100,
+    "description": "由于连续输入错误密码达到上限，账号已被锁定，请于1.0分钟后重新登录"
+  },
+  {
+    "desc": "test008_密码错误3次，输入有效的登录用户名和密码，登录失败",
+    "time": 0,
+    "keywords": "13809213611",
+    "password": "test1234",
+    "status_code": 200,
+    "status": 100,
+    "description": "由于连续输入错误密码达到上限，账号已被锁定，请于1.0分钟后重新登录"
+  },
+  {
+    "desc": "test009_密码错误3次，1分钟后，正常登录成功",
+    "time": 60,
+    "keywords": "13809213611",
+    "password": "test1234",
+    "status_code": 200,
+    "status": 200,
+    "description": "登录成功"
+  }
+]
