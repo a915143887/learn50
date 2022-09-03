@@ -1,17 +1,19 @@
 [
   {
-    "desc":"test001_正常充值成功",
-    "keywords": "13809213610",
+    "desc": "test001_正确填写信息，进行充值",
+    "keywords": "13809213611",
     "paymentType": "chinapnrTrust",
     "amount": "10000",
     "formStr": "reForm",
     "valicode": "8888",
     "top_up_status_code": 200,
-    "top_up_status": 200
+    "top_up_status": 200,
+    "third_status_code": 200,
+    "third_text": "OK"
   },
-  {
-    "desc":"test002_充值验证码错误，充值失败",
-    "keywords": "13809213610",
+    {
+    "desc": "test002_错误验证码，进行充值",
+    "keywords": "13809213611",
     "paymentType": "chinapnrTrust",
     "amount": "10000",
     "formStr": "reForm",

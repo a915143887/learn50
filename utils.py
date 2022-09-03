@@ -91,7 +91,7 @@ class mysql_conn():
             cls.__cursor = cls.__get_conn(db_name).cursor()
         return cls.__cursor
 
-    #编写sql语句
+    #编写SQL语句
     @classmethod
     def db(cls, sql, db_name):
         try:

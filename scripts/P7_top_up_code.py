@@ -1,5 +1,6 @@
 import app
 import json
+import utils
 import random
 import requests
 import unittest
@@ -30,23 +31,21 @@ class top_up_code(CheckPoint):
         self.session.close()
 
     #充值验证码
-    @parameterized.expand(build_data(filename="test017_top_up_code.json", params_name="t, status_code, value"))
-    def test001_and_004_top_up_code(self, t, status_code, value):
+    @parameterized.expand(build_data(filename="P7_top_up_code.json", params_name="t, status_code, headers_data"))
+    def test001_and_004_top_up_code(self, t, status_code, headers_data):
         type = t
         if type == "int":
-            self.r = random.randint(1, 100000000)
+            self.r = random.randint(1, 1000000000)
         elif type == "float":
             self.r = random.random()
         elif type == "null":
             self.r = ""
         elif type == "letter":
-            self.r = ''.join(random.sample("asdfghjklmnbvcxz", 6))
-
+            self.r = ''.join(random.sample("qwertyuioplkjhgfdsazxcvbnm", 6))
         response = self.top_up_code_api.top_up_code(self.session, self.r)
-        print("获取充值验证码，响应状态码：{}，响应头：{}".format(response.status_code, response.headers.get("Content-Type")))
+        print("充值验证码，响应状态码：{}，响应头：{}".format(response.status_code, response.headers.get("Content-Type")))
         self.checkAssertEqual(status_code, response.status_code)
-        self.checkAssertEqual(value, response.headers.get("Content-Type"))
+        self.checkAssertEqual(headers_data, response.headers.get("Content-Type"))
         self.checkTestResult()
     if __name__ == "__main__":
         unittest.main()
-
