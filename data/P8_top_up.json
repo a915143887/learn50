@@ -1,7 +1,7 @@
 [
   {
     "desc": "test001_正确填写信息，进行充值",
-    "keywords": "13809213611",
+    "keywords": "13809213612",
     "paymentType": "chinapnrTrust",
     "amount": "10000",
     "formStr": "reForm",
@@ -13,7 +13,7 @@
   },
     {
     "desc": "test002_错误验证码，进行充值",
-    "keywords": "13809213611",
+    "keywords": "13809213612",
     "paymentType": "chinapnrTrust",
     "amount": "10000",
     "formStr": "reForm",

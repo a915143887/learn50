@@ -4,11 +4,11 @@ base_Dir = os.path.dirname(os.path.abspath(__file__))
 
 base_Url = "http://user-p2p-test.itheima.net"
 
-login_phone = "13809213611"
+login_phone = "13809213612"
 
-sms_phone = "13809213611"
+sms_phone = "13809213612"
 
-authentica_phone = "13809213611"
+authentica_phone = "13809213612"
 
 #no_authentica_phone = "18814101017"
 

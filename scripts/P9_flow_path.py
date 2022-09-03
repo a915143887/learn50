@@ -21,14 +21,14 @@ class flow_path(CheckPoint):
     @classmethod
     def setUpClass(cls):
         cls.flow_path_api = p2p_api()
-        cls.session =requests.session()
+        cls.session = requests.session()
     #后置处理
     @classmethod
     def tearDownClass(cls):
         cls.session.close()
-        sql_01 = "delete from litemall_user where id in (10037, 10038, 10039)"
+        sql_01 = "delete from litemall_user where id in (10043, 10044, 10045)"
         print(utils.mysql_conn.db(sql_01, app.db_database))
-        sql_02 = "delete from litemall_user where id in (10040, 10041, 10042)"
+        sql_02 = "delete from litemall_user where id in (10046, 10047, 10048)"
         print(utils.mysql_conn.db(sql_02, app.db_database))
 
     def test001_register_success(self):

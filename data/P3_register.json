@@ -1,7 +1,7 @@
 [
   {
     "desc": "test001_正确必填参数_注册成功",
-    "phone": "13809213611",
+    "phone": "13809213612",
     "imgVerifyCode": "8888",
     "password": "test1234",
     "verifycode": "8888",
@@ -14,20 +14,20 @@
   },
   {
     "desc": "test002_正确所有参数_注册成功",
-    "phone": "13809223611",
+    "phone": "13809223612",
     "imgVerifyCode": "8888",
     "password": "test1234",
     "verifycode": "8888",
     "phone_code": "666666",
     "dy_server": "on",
-    "invite_phone": "13809213611",
+    "invite_phone": "13809213612",
     "status_code": 200,
     "status": 200,
     "description": "注册成功"
   },
   {
     "desc": "test003_图片验证码错误_注册失败",
-    "phone": "13809233611",
+    "phone": "13809233612",
     "imgVerifyCode": "8888",
     "password": "test1234",
     "verifycode": "8889",
@@ -40,7 +40,7 @@
   },
   {
     "desc": "test004_短信验证码错误_注册失败",
-    "phone": "13809243611",
+    "phone": "13809243612",
     "imgVerifyCode": "8888",
     "password": "test1234",
     "verifycode": "8888",
@@ -53,7 +53,7 @@
   },
   {
     "desc": "test005_手机已存在_注册失败",
-    "phone": "13809213611",
+    "phone": "13809213612",
     "imgVerifyCode": "8888",
     "password": "test1234",
     "verifycode": "8888",
@@ -66,7 +66,7 @@
   },
   {
     "desc": "test006_密码为空_注册失败",
-    "phone": "13809253611",
+    "phone": "13809253612",
     "imgVerifyCode": "8888",
     "password": "",
     "verifycode": "8888",
@@ -79,7 +79,7 @@
   },
   {
     "desc": "test007_未同意条款_注册失败",
-    "phone": "13809263611",
+    "phone": "13809263612",
     "imgVerifyCode": "8888",
     "password": "test1234",
     "verifycode": "8888",
@@ -92,7 +92,7 @@
   },
   {
     "desc": "test008_正确填写必填参数_注册成功_作为数据_后面使用",
-    "phone": "13809273611",
+    "phone": "13809273612",
     "imgVerifyCode": "8888",
     "password": "test1234",
     "verifycode": "8888",
